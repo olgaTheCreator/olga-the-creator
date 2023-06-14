@@ -13,38 +13,32 @@ export const AboutMe = () => {
           .
         </p>
       </div>
-      <div className="bg-white lg:w-72 2xl:p-8 lg:p-6 max-w-72 text-2xl border-4 border-black border-dotted col-start-3 row-start-1 leading-relaxed">
+      <div className="bg-white lg:w-max 2xl:p-8 lg:p-6 max-w-max h-max text-2xl border-4 border-black border-dotted col-start-3 row-start-1 leading-relaxed">
         <p>
-          Checkout my <span className="font-bold">CV </span>and{" "}
+          My{" "}
           <Link className="text-red_bright underline" href="/portfolio">
             portfolio
           </Link>
           .
         </p>
       </div>
-      <div className="bg-white lg:w-sm p-8 max-w-sm col-start-2 col-span-4 row-start-2 row-span-3 mt-20 text-2xl border-4 border-black border-dotted leading-relaxed">
-        <p>
-          <ul className="list-disc">
-            Harvard Cs50 Certificate:
-            <li>beating Sekiro on NG+</li>
-            <li>techno</li>
-            <li>my kids</li>
-            <li>routes</li>
-          </ul>
-        </p>
+      <div className="bg-white lg:w-sm p-8 max-w-sm col-start-1 col-span-3 mx-10 row-start-2 row-span-3 mt-20 text-2xl border-4 border-black border-dotted leading-relaxed">
+        <p>Harvard Cs50 Certificate:</p>
       </div>
-      <div className="bg-white lg:w-sm p-4 max-w-sm col-start-11 ml-16 col-span-2 mb-16 row-start-2 row-span-3 mt-20 text-lg border-4 border-black border-dotted">
-        <p>
-          <ul className="list-disc list-inside">
-            I love:
-            <li>Sekiro</li>
-            <li>techno</li>
-            <li>my kids</li>
-            <li>routes</li>
-            <li>programming languages</li>
-            <li>Advent of Code</li>
-          </ul>
-        </p>
+      <div className="bg-white lg:w-sm p-4 max-w-sm h-max col-start-11 ml-16 col-span-2 mb-16 row-start-2 mt-20 text-lg border-4 border-black border-dotted">
+        <p>I've beaten Sekiro on NG+</p>
+      </div>
+      <div className="bg-white mt-6 lg:w-max 2xl:p-8 lg:p-6 max-w-max h-max text-2xl border-4 border-black border-dotted col-start-12 row-start-1 leading-relaxed">
+        My{" "}
+        <Link className="font-bold underline" href="/portfolio">
+          CV
+        </Link>
+      </div>
+      <div className="bg-white mt-6 2xl:p-8 lg:p-6 text-2xl max-w-sm lg:w-sm border-4 border-black border-dotted col-start-4 row-start-2 h-max col-span-2 leading-relaxed">
+        I like techno and crocheting
+      </div>
+      <div className="bg-white lg:w-sm p-4 max-w-sm h-max col-start-1 mx-16 col-span-2 mb-16 row-start-1 mt-20 text-lg border-4 border-black border-dotted">
+        <p>I'm vegan</p>
       </div>
     </div>
   );
