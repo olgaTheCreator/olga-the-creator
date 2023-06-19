@@ -1,10 +1,14 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
 
 export const AboutMe = () => {
+  const [animate, setAnimate] = useState<boolean>(true);
+
   return (
     <div className="w-full bg-yellow_bright font-roboto font-medium h-full border-x-4 border-b-4 border-black flex-col flex">
       <div className=" relative grid grid-cols-12 grid-rows-6 w-full h-4/5 px-10 pt-10 ">
-        <div className="bg-white ml-16 2xl:text-5xl lg:text-4xl lg:leading-normal 2xl:leading-relaxed lg:w-2xl 2xl:p-12 lg:p-6 max-w-2xl col-start-6 col-span-5 2xl:row-span-4 lg:row-span-3 mt-16 border-4 border-black border-dotted">
+        <div className="bg-white ml-16 2xl:text-5xl lg:text-4xl lg:leading-normal 2xl:leading-relaxed lg:w-2xl 2xl:p-12 lg:p-6 max-w-2xl col-start-6 col-span-5 2xl:row-span-5 lg:row-span-3 mt-16 border-4 border-black border-dotted">
           <p>Hello,</p>
           <p>
             my name is Olga Curylo and I’m a{" "}
@@ -45,10 +49,30 @@ export const AboutMe = () => {
           I want to learn about scalability.
         </div>
       </div>
-      <div className=" h-20 w-full bg-white border-y-8 border-dashed border-white bg-gradient-to-r from-red_bright via-blue_bright to-green_bright relative overflow-hidden">
+      <div
+        role="button"
+        onClick={() => setAnimate(!animate)}
+        className={
+          animate
+            ? " h-20 w-full bg-white border-y-8 border-dashed border-white bg-gradient-to-r from-red_bright via-blue_bright to-green_bright relative overflow-hidden"
+            : "h-60  bg-white border-y-8 border-dashed border-white bg-gradient-to-r from-red_bright via-blue_bright to-green_bright"
+        }
+      >
         <div className=" h-full w-full bg-white  relative overflow-hidden flex">
-          <ul className="animate-marquee flex justify-around shrink-0 text-3xl gap-28 whitespace-nowrap pt-3">
-            <li className="font-bold text-4xl ml-28">Typescript</li>
+          <ul
+            className={
+              animate
+                ? "animate-marquee flex justify-around shrink-0 text-3xl gap-28 whitespace-nowrap pt-3"
+                : "flex justify-between text-3xl gap-14 h-20 flex-wrap px-5 py-2"
+            }
+          >
+            <li
+              className={
+                animate ? "font-bold text-4xl ml-28" : "font-bold text-4xl"
+              }
+            >
+              Typescript
+            </li>
             <li>Javascript</li>
             <li>CSS</li>
             <li>HTML5</li>
@@ -70,7 +94,14 @@ export const AboutMe = () => {
             <li>Jest</li>
             <li className="mr-16">React Testing Library</li>
           </ul>
-          <ul className="animate-marquee2 absolute flex justify-around ml-28 shrink-0 text-3xl gap-28 whitespace-nowrap pt-3">
+          <ul
+            aria-hidden
+            className={
+              animate
+                ? "animate-marquee2 absolute flex justify-around ml-28 shrink-0 text-3xl gap-28 whitespace-nowrap pt-3"
+                : "hidden"
+            }
+          >
             <li className="font-bold text-4xl">Typescript</li>
             <li>Javascript</li>
             <li>CSS</li>
