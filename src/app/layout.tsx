@@ -14,7 +14,7 @@ const roboto_mono = Roboto_Mono({
 });
 
 export const metadata = {
-  title: "Olga >>The Creator<< Curylo personal page",
+  title: "Olga's personal page",
   description: "Personal page with portfolio created with next.js",
 };
 
@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${vibur.variable} ${roboto_mono.variable}`}>
-      <body className="font-roboto w-full p-10 h-screen mb-5 text-black">
+      <body className="font-roboto w-full max-w-[130rem] p-10 h-max xl:h-screen mb-5 text-black mx-auto bg-slate-300">
         <Navbar />
 
         {children}
