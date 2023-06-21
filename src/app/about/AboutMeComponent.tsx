@@ -40,18 +40,19 @@ export const AboutMeComponent = () => {
           CV
         </Link>
       </div>
-      <div className="bg-white mt-6 2xl:p-8 lg:p-6 text-2xl max-w-sm lg:w-sm border-4 border-black border-dotted col-start-4 row-start-2 h-max col-span-2 leading-relaxed">
+      <div className="bg-white mt-6 2xl:p -8 lg:p-6 text-2xl max-w-sm lg:w-sm border-4 border-black border-dotted col-start-4 row-start-2 h-max col-span-2 leading-relaxed">
         I like techno and crocheting
       </div>
       <div className="bg-white group relative lg:w-sm p-4 max-w-sm h-max col-start-1 mx-16 col-span-2 mb-16 row-start-1 mt-20 text-lg border-2 border-black border-dotted">
-        <p>{"I'm vegan"}</p>
-        <p
-          className="transition transform duration-1000 invisible group-hover:visible group-hover:-translate-x-96 text-7xl
-            absolute -top-20 flex w-max
+        <p className="visible">{"I'm vegan"}</p>
+        <div
+          className=" bg-white py-4 px-2 border-spacing-4 border-black border-dotted border-2 transition-all duration-[1000ms] group-hover:scale-[2]  invisible group-hover:visible  text-2xl
+            absolute -top-1 -left-28  flex w-max
             "
         >
-          &#128004;🐖🐓🐍🐋
-        </p>
+          I ❤️ &#128004; 🐖 🐓
+          {/* 🐖 🐓 🐍 🐋 */}
+        </div>
       </div>
       <div
         role="button"
@@ -71,9 +72,10 @@ export const AboutMeComponent = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="bg-white  hover:border-dashed hover:rounded-xl hover:shadow-lg hover:shadow-[#c4e2fd] hover:border-blue_bright relative mt-4 mx-4 2xl:p-6 lg:p-6 text-2xl max-w-sm lg:w-sm border-4 border-black border-dotted leading-relaxed"
+            className="bg-white group hover:border-dashed hover:rounded-xl hover:shadow-lg hover:shadow-[#c4e2fd] hover:border-blue_bright relative mt-4 mx-4 2xl:p-6 lg:p-6 text-2xl max-w-sm lg:w-sm border-4 border-black border-dotted leading-relaxed"
           >
-            I want to learn about scalability.
+            I want to learn about{" "}
+            <span className="group-hover:font-bold ">scalability</span>.
           </motion.div>
         )}
       </div>
