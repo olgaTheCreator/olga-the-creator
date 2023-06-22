@@ -28,6 +28,7 @@ export const Navbar = () => {
             >
               {link.title}
             </Link>
+      
           );
         })}
       </div>

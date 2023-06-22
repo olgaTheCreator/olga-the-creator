@@ -43,11 +43,11 @@ export const AboutMeComponent = () => {
       <div className="bg-white mt-6 2xl:p -8 lg:p-6 text-2xl max-w-sm lg:w-sm border-4 border-black border-dotted col-start-4 row-start-2 h-max col-span-2 leading-relaxed">
         I like techno and crocheting
       </div>
-      <div className="bg-white group relative lg:w-sm p-4 max-w-sm h-max col-start-1 mx-16 col-span-2 mb-16 row-start-1 mt-20 text-lg border-2 border-black border-dotted">
+      <div className="bg-white group relative lg:w-sm p-4 max-w-sm h-max col-start-1 mx-16 col-span-2 mb-16 row-start-1 mt-16 text-lg border-2 border-black border-dotted">
         <p className="visible">{"I'm vegan"}</p>
         <div
-          className=" bg-white py-4 px-2 border-spacing-4 border-black border-dotted border-2 transition-all duration-[1000ms] group-hover:scale-[2]  invisible group-hover:visible  text-2xl
-            absolute -top-1 -left-28  flex w-max
+          className=" bg-white py-4 px-2 opacity-0 group-hover:opacity-100 border-spacing-4 border-black border-dotted border-2 transition-all duration-[1000ms] group-hover:scale-150  invisible group-hover:visible  text-2xl
+            absolute -top-1 -left-20  flex w-max
             "
         >
           I ❤️ &#128004; 🐖 🐓

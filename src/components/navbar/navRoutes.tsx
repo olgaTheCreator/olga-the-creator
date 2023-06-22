@@ -7,13 +7,13 @@ export const navRoutes = [
   },
   {
     title: "portfolio",
-    path: "portfolio",
+    path: "/portfolio",
     activeStyle: " bg-red_bright",
     regularStyle: " bg-red_light",
   },
   {
     title: "resources",
-    path: "resources",
+    path: "/resources",
     activeStyle: " bg-blue_bright",
     regularStyle: " bg-blue_light",
   },
