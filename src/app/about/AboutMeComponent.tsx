@@ -46,7 +46,7 @@ export const AboutMeComponent = () => {
       <div className="bg-white group relative lg:w-sm p-4 max-w-sm h-max col-start-1 mx-16 col-span-2 mb-16 row-start-1 mt-20 text-lg border-2 border-black border-dotted">
         <p className="visible">{"I'm vegan"}</p>
         <div
-          className=" bg-white py-4 px-2 border-spacing-4 border-black border-dotted border-2 transition-all duration-[1000ms] group-hover:scale-[2]  invisible group-hover:visible  text-2xl
+          className=" bg-white py-8 px-4 border-spacing-4 border-black border-dotted border-2 transition-all duration-[1000ms] group-hover:scale-[2]  invisible group-hover:visible  text-4xl
             absolute -top-1 -left-28  flex w-max
             "
         >
