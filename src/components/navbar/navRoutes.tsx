@@ -3,7 +3,7 @@ export const navRoutes = [
     title: "about",
     path: "/about",
     activeStyle: " bg-yellow_bright",
-    regularStyle: " bg-yellow_light ",
+    regularStyle: " bg-yellow_light border-l-2",
   },
   {
     title: "portfolio",

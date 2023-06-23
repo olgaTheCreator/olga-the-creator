@@ -13,15 +13,15 @@ export const MySkillsComponent = () => {
       onClick={() => setAnimate(!animate)}
       className={
         animate
-          ? " h-20 w-full bg-white border-y-8 border-dashed border-white bg-gradient-to-r from-red_bright via-blue_bright to-green_bright relative overflow-hidden"
+          ? " h-20 w-full bg-white border-y-8 border-dashed border-white bg-gradient-to-r from-red_bright via-blue_bright to-green_bright relative overflow-hidden "
           : "h-56  bg-white border-y-8 border-dashed border-white bg-gradient-to-r from-red_bright via-blue_bright to-green_bright"
       }
     >
-      <div className=" h-full w-full bg-white  relative overflow-hidden flex">
+      <div className=" h-full w-full bg-white  relative overflow-hidden flex group">
         <ul
           className={`flex ${
             animate
-              ? "animate-marquee text-3xl gap-28 whitespace-nowrap justify-evenly shrink-0 pt-3 "
+              ? "animate-marquee text-3xl gap-28 whitespace-nowrap justify-evenly shrink-0 pt-3 group-hover:pause-animation"
               : "space-x-14 flex-wrap  py-4 px-16 text-2xl justify-evenly items-center"
           }`}
         >
@@ -65,7 +65,7 @@ export const MySkillsComponent = () => {
           aria-hidden
           className={
             animate
-              ? "animate-marquee2 absolute flex justify-evenly ml-28 shrink-0 text-3xl gap-28 whitespace-nowrap pt-3"
+              ? "animate-marquee2 absolute flex justify-evenly ml-28 shrink-0 text-3xl gap-28 whitespace-nowrap pt-3 group-hover:pause-animation"
               : "hidden"
           }
         >
