@@ -26,8 +26,8 @@ const Portfolio = () => {
           <div className="bg-white ml-2 -mr-10 mt-10 p-4 h-max border-4 border-black border-dashed relative">
             <h1 className="text-2xl">TECHSTACK:</h1>
             <p className="mt-4 text-xl leading-9 font-normal">
-              <span className="font-semibold">Next.js</span>, React, React
-              Hooks, <span className="font-semibold">Sanic</span>, Mayim, HTML,
+              <span className="font-semibold">React</span>, React Hooks, React
+              Router, <span className="font-semibold">Sanic</span>, Mayim, HTML,
               CSS, Figma, SQL, <span className="font-semibold">SQLite</span>,
               esbuild, NGINX, Pipenv,{" "}
               <span className="font-semibold">TailwindCSS</span>, Pandas
@@ -74,14 +74,14 @@ const Portfolio = () => {
           </Link>
         </div>
         <div className="flex flex-col w-1/6">
-          <div className="bg-white ml-8  -mt-5 p-4 h-max border-4 border-black border-dashed relative">
+          <div className="bg-white ml-8  -mt-5 p-4 h-max mr-2 border-4 border-black border-dashed relative">
             <h1 className="text-2xl font-bold">BREAZY</h1>
             <p className="mt-4 text-xl leading-9 font-normal">
               A <span className="font-semibold">front-end</span> web app coded
               using React.
             </p>
           </div>
-          <div className="bg-white -ml-16  mt-10 p-4 h-max  border-4 border-black border-dashed relative">
+          <div className="bg-white -ml-16  mt-10 p-4 h-max mr-6 border-4 border-black border-dashed relative">
             <p className="text-xl leading-9 font-normal">
               <span className="font-semibold">Breazy</span> - breathing
               exercises made easy.
