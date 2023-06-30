@@ -12,7 +12,7 @@ export const AboutMeComponent = () => {
       <div className="bg-white ml-16 2xl:text-5xl lg:text-4xl lg:leading-normal flex flex-col place-items-center 2xl:leading-relaxed justify-center lg:w-2xl 2xl:p-6 lg:p-6 max-w-2xl col-start-6 col-span-5 2xl:max-h-max h-fit  mt-16 border-8 border-black border-dotted">
         <p className="w-full text-left">Hello,</p>
         <p>
-          my name is Olga and {"I’m"} a <br />
+          my name is Olga Curylo and {"I’m"} a <br />
           <span className="font-bold bg-yellow_bright">
             full-stack developer
           </span>

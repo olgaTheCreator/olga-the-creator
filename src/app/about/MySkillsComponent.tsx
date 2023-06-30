@@ -60,6 +60,11 @@ export const MySkillsComponent = () => {
           <li>Figma</li>
           <li>Jest</li>
           <li className="mr-16">React Testing Library</li>
+          <li>Pandas</li>
+          <li>Accessibility</li>
+          <li>Inkscape</li>
+          <li>Flask</li>
+          <li>Pydantic</li>
         </ul>
         <ul
           aria-hidden
@@ -90,6 +95,11 @@ export const MySkillsComponent = () => {
           <li>Figma</li>
           <li>Jest</li>
           <li>React Testing Library</li>
+          <li>Pandas</li>
+          <li>Accessibility</li>
+          <li>Inkscape</li>
+          <li>Flask</li>
+          <li>Pydantic</li>
         </ul>
       </div>
     </motion.div>

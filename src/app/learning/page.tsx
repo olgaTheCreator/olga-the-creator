@@ -2,6 +2,7 @@ import Link from "next/link";
 import {
   computerScienceLinks,
   cssAndHtmlLinks,
+  frameworksLinks,
   javaScriptLinks,
   resourcesLink,
 } from "./resourcesLinks";
@@ -15,9 +16,10 @@ const learningAreas: LearningArea[] = [
   { title: "COMPUTER SCIENCE", links: computerScienceLinks },
   { title: "CSS and HTML", links: cssAndHtmlLinks },
   { title: "JAVASCRIPT and TYPESCRIPT", links: javaScriptLinks },
+  { title: "FRONTEND FRAMEWORKS", links: frameworksLinks },
 ];
 
-const Resources = () => {
+const LearningResources = () => {
   return (
     <>
       <div className="w-full relative bg-blue_bright font-roboto font-medium h-max min-h-screen border-x-4 border-b-4 border-black flex flex-col py-16 px-8 items-center gap-10">
@@ -25,11 +27,11 @@ const Resources = () => {
           For people who want to start or expand their self-taught coding
           journey I recommend visiting pages listed below.
         </h1>
-        <h2 className="w-full max-w-screen-xl  text-4xl text-justify">
+        <h2 className="w-full max-w-screen-xl  text-4xl">
           They all were a source of great{" "}
           <span className="font-bold">knowledge</span> and all of the resources
-          are <span className="font-bold">free</span>. Links marked with *
-          suggest more advanced content.
+          are <span className="font-bold">free</span>. * next to a link suggests
+          more advanced content.
         </h2>
         <div className="flex gap-8">
           {learningAreas.map((area) => {
@@ -64,4 +66,4 @@ const Resources = () => {
   );
 };
 
-export default Resources;
+export default LearningResources;

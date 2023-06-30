@@ -9,6 +9,8 @@ export const computerScienceLinks: resourcesLink[] = [
     href: "https://cs50.harvard.edu/x/2023/",
     star: "*",
   },
+  { title: "Code Wars", href: "https://www.codewars.com/dashboard" },
+  { title: "Advent of Code", href: "https://adventofcode.com/", star: "*" },
 ];
 export const cssAndHtmlLinks: resourcesLink[] = [
   {
@@ -45,5 +47,15 @@ export const javaScriptLinks: resourcesLink[] = [
     title: "Microsoft's TypeScript learning path",
     href: "https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/",
     star: "*",
+  },
+];
+export const frameworksLinks: resourcesLink[] = [
+  {
+    title: "freeCodeCamp - Front End Libraries",
+    href: "https://www.freecodecamp.org/learn/front-end-development-libraries/",
+  },
+  {
+    title: "Frontend Mentors - challenges",
+    href: "https://www.frontendmentor.io/challenges",
   },
 ];

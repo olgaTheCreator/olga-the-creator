@@ -12,14 +12,14 @@ export const navRoutes = [
     regularStyle: " bg-red_light",
   },
   {
-    title: "resources",
-    path: "/resources",
+    title: "learning",
+    path: "/learning",
     activeStyle: " bg-blue_bright",
     regularStyle: " bg-blue_light",
   },
   {
     title: "contact",
-    path: "contact",
+    path: "/contact",
     activeStyle: " bg-green_bright",
     regularStyle: " bg-green_light ",
   },
