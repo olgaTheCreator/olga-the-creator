@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Breazy from "../../../public/Breazy.jpg";
+import Breazy from "../../../public/images/Breazy.jpg";
 
 export const BreazyImageComponent = () => {
   return (

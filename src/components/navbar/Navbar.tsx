@@ -7,7 +7,7 @@ import { navRoutes } from "./navRoutes";
 export const Navbar = () => {
   const pathname = usePathname();
   const activeLink =
-    "h-24 w-full flex place-items-center justify-center p-6 rounded-t-xl border-x-4 border-t-4 border-black";
+    "h-24 w-full flex place-items-center justify-center p-6 rounded-t-xl border-x-4 border-t-4 border-black text-6xl";
   const navStyle =
     "h-20 w-full flex place-items-center justify-center p-6  border-t-2 border-b-4 border-x border-black relative";
   return (
@@ -28,7 +28,6 @@ export const Navbar = () => {
             >
               {link.title}
             </Link>
-      
           );
         })}
       </div>

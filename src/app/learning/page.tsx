@@ -33,7 +33,7 @@ const LearningResources = () => {
           are <span className="font-bold">free</span>. * next to a link suggests
           more advanced content.
         </h2>
-        <div className="flex gap-8">
+        <div className="flex gap-8 max-w-screen-xl flex-wrap justify-center">
           {learningAreas.map((area) => {
             return (
               <div

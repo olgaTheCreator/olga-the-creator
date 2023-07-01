@@ -19,7 +19,7 @@ export const AboutMeComponent = () => {
           .
         </p>
       </div>
-      <div className="bg-white lg:w-max 2xl:p-8 lg:p-6 max-w-max h-max text-2xl border-4 border-black border-dashed col-start-3 row-start-1 leading-relaxed">
+      <div className="bg-white lg:w-max 2xl:p-8 lg:p-6 max-w-max h-max text-3xl border-4 border-black border-dashed col-start-3 row-start-1 leading-relaxed">
         <p>
           My{" "}
           <Link className="text-red_bright underline" href="/portfolio">
@@ -34,11 +34,16 @@ export const AboutMeComponent = () => {
       <div className="bg-white lg:w-sm p-4 max-w-sm h-max col-start-11 ml-16 col-span-2 mb-16 row-start-2 mt-20 text-lg border-8 border-black border-dashed">
         <p>{"I've beaten Sekiro on NG+"}</p>
       </div>
-      <div className="bg-white mt-6 lg:w-max 2xl:p-8 lg:p-6 max-w-max h-max text-2xl border-4 border-black border-solid col-start-12 row-start-1 leading-relaxed">
+      <div className="bg-white mt-6 lg:w-max 2xl:p-8 lg:p-6 max-w-max h-max text-4xl border-4 border-black border-solid col-start-12 row-start-1 leading-relaxed">
         My{" "}
-        <Link className="font-bold underline" href="/portfolio">
+        <a
+          href="/files/Olga_Curylo_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-bold underline"
+        >
           CV
-        </Link>
+        </a>
       </div>
       <div className="bg-white mt-6 2xl:p -8 lg:p-6 text-2xl max-w-sm lg:w-sm border-4 border-black border-dotted col-start-4 row-start-2 h-max col-span-2 leading-relaxed">
         I like techno and crocheting
@@ -64,7 +69,7 @@ export const AboutMeComponent = () => {
         {scalability ? (
           <Image
             className="hover:animate-bounce rotate-12"
-            src="/datadoesntlie.gif"
+            src="/images/datadoesntlie.gif"
             alt="gif of computer showing text data doesn't lie, people do"
             height={300}
             width={200}
