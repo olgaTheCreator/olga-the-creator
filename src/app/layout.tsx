@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${vibur.variable} ${roboto_mono.variable}`}>
-      <body className="font-roboto w-full lg:max-w-[130rem] p-2 md:p-4 lg:p-10 h-max xl:h-screen mb-5 text-black mx-auto bg-slate-300">
+      <body className="font-roboto w-full lg:max-w-[130rem] p-2 md:p-4 lg:p-10 h-max  mb-5 text-black mx-auto bg-slate-300 ">
         <Navbar />
 
         {children}

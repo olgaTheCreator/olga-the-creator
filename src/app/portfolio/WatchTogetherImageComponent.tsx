@@ -4,7 +4,7 @@ import NetflixTogether from "../../../public/images/NetflixTogether.jpg";
 
 export const WatchTogetherImageComponent = () => {
   return (
-    <div className="bg-white  xl:w-96 p-4 h-max text-2xl border-4 group border-black border-dashed relative group hover:bg-black hover:border-white transition-all duration-300">
+    <div className="bg-white order-first md:order-last xl:w-96 p-4 h-max text-2xl border-4 group border-black border-dashed relative group hover:bg-black hover:border-white transition-all duration-300">
       {" "}
       <Link
         className="relative"
