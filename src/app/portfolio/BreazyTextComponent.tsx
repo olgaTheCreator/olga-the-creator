@@ -5,7 +5,7 @@ import { useState } from "react";
 export const BreazyTextComponent = () => {
   const [readMore, setReadMore] = useState(false);
   return (
-    <div className="flex flex-col lg:flex-row  lg:flex-wrap sm:w-1/2 lg:w-3/5 place-items-center sm:place-items-end sm:place-content-end lg:place-items-start lg:place-content-start gap-6 md:gap-8">
+    <div className="flex flex-col lg:flex-row  lg:flex-wrap sm:w-1/2 lg:w-3/5 place-items-center  sm:items-end lg:place-items-start lg:place-content-start gap-6 md:gap-8">
       <div className="text-6xl xl:text-7xl sm:w-max lg:w-full lg:mb-6 font-light relative place-self-start sm:place-self-end lg:place-self-start">
         <h1 className="">BREAZY</h1>
         <h1 className="text-white absolute left-1 top-1">BREAZY</h1>
