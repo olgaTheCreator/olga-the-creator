@@ -1,3 +1,4 @@
+import { ScrollToTop } from "@/components/scrollToTop/ScrollToTop";
 import { Navbar } from "../components/navbar/Navbar";
 import "./globals.css";
 import { Vibur, Roboto_Mono } from "next/font/google";
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Navbar />
 
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );
