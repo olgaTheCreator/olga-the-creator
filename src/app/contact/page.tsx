@@ -1,9 +1,17 @@
+"use client";
 import { BackgroundImage } from "./BackgroundImage";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="w-full bg-green_bright font-roboto h-screen border-x-4 border-b-4 border-black flex-col items-center flex p-10 relative overflow-hidden">
+    <motion.div
+      key="contact"
+      initial={{ opacity: 0.9 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="w-full bg-green_bright font-roboto h-screen border-x-4 border-b-4 border-black flex-col items-center flex p-10 relative overflow-hidden"
+    >
       {/* <Image src={backgroudFace} fill alt="background face image" /> */}
       <div className="absolute lg:w-1/2 w-full h-full z-0 object-center object-cover">
         <BackgroundImage />
@@ -46,7 +54,7 @@ const Contact = () => {
           </button>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

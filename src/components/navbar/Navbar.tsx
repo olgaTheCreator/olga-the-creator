@@ -18,11 +18,12 @@ export const Navbar = () => {
 
           return (
             <Link
-              className={
+              className={`transition-all duration-200 ${
                 isActive
                   ? activeLink + link.activeStyle
                   : navStyle + link.regularStyle
               }
+              `}
               href={link.path}
               key={link.title}
             >

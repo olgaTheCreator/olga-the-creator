@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import {
   computerScienceLinks,
@@ -6,6 +7,7 @@ import {
   javaScriptLinks,
   resourcesLink,
 } from "./resourcesLinks";
+import { motion } from "framer-motion";
 
 interface LearningArea {
   title: string;
@@ -22,7 +24,13 @@ const learningAreas: LearningArea[] = [
 const LearningResources = () => {
   return (
     <>
-      <div className="w-full relative bg-blue_bright font-roboto font-medium h-max min-h-screen border-x-4 border-b-4 border-black flex flex-col p-4 lg:py-8 xl:py-16 lg:px-8 items-center gap-6 xl:gap-10">
+      <motion.div
+        key="learning"
+        initial={{ opacity: 0.9 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="w-full relative bg-blue_bright font-roboto font-medium h-max min-h-screen border-x-4 border-b-4 border-black flex flex-col p-4 lg:py-8 xl:py-16 lg:px-8 items-center gap-6 xl:gap-10"
+      >
         <h1 className="w-full first-letter:text-4xl md:first-letter:text-5xl max-w-screen-xl lg:text-4xl text-2xl md:text-3xl xl:text-5xl xl:text-justify">
           For people who want to start or expand their self-taught coding
           journey I recommend visiting pages listed below.
@@ -63,7 +71,7 @@ const LearningResources = () => {
             );
           })}
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
