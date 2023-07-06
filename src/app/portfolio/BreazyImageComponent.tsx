@@ -12,7 +12,7 @@ export const BreazyImageComponent = () => {
           href="https://olgathecreator.github.io/breazy/"
         >
           <Image
-            className="group-hover:opacity-30 transition-opacity duration-300"
+            className="group-hover:opacity-30 transition-all duration-300"
             src={Breazy}
             alt="screenshot of Netflix Together app"
           />

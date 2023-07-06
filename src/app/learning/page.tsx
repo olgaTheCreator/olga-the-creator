@@ -26,14 +26,14 @@ const container = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.5
-    }
-  }
+      staggerChildren: 0.5,
+    },
+  },
 };
 
 const listItem = {
   hidden: { opacity: 0 },
-  show: { opacity: 1 }
+  show: { opacity: 1 },
 };
 
 const LearningResources = () => {
@@ -56,11 +56,16 @@ const LearningResources = () => {
           are <span className="font-bold">free</span>. * next to a link suggests
           more advanced content.
         </h2>
-        <motion.div variants={container} initial="hidden" animate="show" className="flex gap-4 md:gap-6 lg:gap-8 max-w-screen-xl flex-wrap justify-center">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="flex gap-4 md:gap-6 lg:gap-8 max-w-screen-xl flex-wrap justify-center"
+        >
           {learningAreas.map((area) => {
             return (
               <motion.div
-              variants={listItem}
+                variants={listItem}
                 key={area.title}
                 className="bg-white w-full md:max-w-xs lg:max-w-md mt-5 p-4 lg:p-6 h-max  border-4 border-black border-dashed relative"
               >
