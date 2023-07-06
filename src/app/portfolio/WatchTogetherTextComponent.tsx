@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export const WatchTogetherTextComponent = () => {
   const [readMore, setReadMore] = useState(false);
@@ -11,10 +12,10 @@ export const WatchTogetherTextComponent = () => {
           WATCH <br />
           TOGETHER
         </h1>
-        <h1 className="text-white absolute left-1 top-1">
+        <motion.h1 initial={{x:10, y:10}} whileInView={{x:[9,0,1,0], y:[9,0,1,0]}} transition={{duration:0.7, delay:0.5}} className="text-white absolute left-1 top-1">
           WATCH <br />
           TOGETHER
-        </h1>
+        </motion.h1>
       </div>
 
       <div className="bg-white p-2 md:p-4 h-max border-4 border-black border-dashed relative md:w-max w-full md:max-w-xs">
@@ -60,7 +61,11 @@ export const WatchTogetherTextComponent = () => {
       </div>
       {readMore && (
         <>
-          <div className="bg-white p-2 md:p-4 h-max border-4 border-black border-dashed relative sm:w-max w-full sm:max-w-md lg:max-w-xl xl:max-w-xs 2xl:max-w-sm">
+                    <motion.div
+              initial={{ opacity: 0}}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }} className="bg-white p-2 md:p-4 h-max border-4 border-black border-dashed relative sm:w-max w-full sm:max-w-md lg:max-w-xl xl:max-w-xs 2xl:max-w-sm">
             <h1 className="text-xl md:text-2xl font-bold">TECHSTACK:</h1>
             <p className="md:mt-4 text-lg md:text-xl leading-9 font-normal">
               <span className="font-semibold">React</span>, React Hooks, React
@@ -69,8 +74,12 @@ export const WatchTogetherTextComponent = () => {
               esbuild, NGINX, Pipenv,{" "}
               <span className="font-semibold">TailwindCSS</span>, Pandas
             </p>
-          </div>
-          <div className="bg-white p-2 md:p-4 h-max border-4 border-black border-dashed relative sm:w-max w-full sm:max-w-sm lg:max-w-lg xl:max-w-xs 2xl:max-w-sm">
+          </motion.div>
+                   <motion.div
+              initial={{ opacity: 0}}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0,  }}
+              transition={{ duration: 1, delay: 0.2 }} className="bg-white p-2 md:p-4 h-max border-4 border-black border-dashed relative sm:w-max w-full sm:max-w-sm lg:max-w-lg xl:max-w-xs 2xl:max-w-sm">
             <h1 className="text-xl md:text-2xl font-bold">
               PROBLEMS I ENCOUNTERED:
             </h1>
@@ -83,8 +92,12 @@ export const WatchTogetherTextComponent = () => {
                 <li>NGINX configuration</li>
               </ul>
             </div>
-          </div>
-          <div className="bg-white p-2 md:p-4 h-max border-4 border-black border-dashed relative sm:w-max w-full sm:max-w-xl">
+          </motion.div>
+          <motion.div
+              initial={{ opacity: 0}}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1,delay: 0.4 }} className="bg-white p-2 md:p-4 h-max border-4 border-black border-dashed relative sm:w-max w-full sm:max-w-xl">
             <h1 className="text-xl md:text-2xl font-bold">
               I&apos;M BETTER DEVELOPER AFTER THIS PROJECT BECAUSE:
             </h1>
@@ -98,7 +111,7 @@ export const WatchTogetherTextComponent = () => {
                 <li>I now know how to set up cookies and use local storage</li>
               </ul>
             </div>
-          </div>
+          </motion.div>
         </>
       )}
     </div>

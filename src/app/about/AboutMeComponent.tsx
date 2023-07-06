@@ -88,7 +88,7 @@ export const AboutMeComponent = () => {
         </a>
       </motion.div>
       <motion.div
-        initial={{ x: "500%" }}
+        initial={{ x: "-500%" }}
         animate={{ x: "0%" }}
         transition={{ duration: 0.4, delay: 0.5 }}
         className="group relative w-max lg:w-sm max-w-sm h-max xl:col-start-1 xl:mx-10 xl:col-span-2 lg:mb-16 xl:row-start-1 lg:mt-16 text-2xl xl:text-lg md:text-xl lg:col-start-10 lg:row-start-4 "

@@ -14,7 +14,7 @@ export const BreazyTextComponent = () => {
       <AnimatePresence>
         <div className="text-6xl xl:text-7xl sm:w-max lg:w-full lg:mb-6 font-light relative place-self-start sm:place-self-end lg:place-self-start">
           <h1 className="">BREAZY</h1>
-          <h1 className="text-white absolute left-1 top-1">BREAZY</h1>
+          <motion.h1 initial={{x:10, y:10}} whileInView={{x:[9,0,1,0], y:[9,0,1,0]}} transition={{duration:0.5, delay:0.3}} className="text-white absolute left-1 top-1">BREAZY</motion.h1>
         </div>
 
         <div className="bg-white p-2 md:p-4 h-max border-4 border-black border-dashed relative md:w-max w-full md:max-w-xs">
@@ -56,9 +56,9 @@ export const BreazyTextComponent = () => {
         {readMore && (
           <>
             <motion.div
-              initial={{ opacity: 0, scaleY: 0, originY: 0 }}
-              animate={{ opacity: 1, scaleY: 1 }}
-              exit={{ opacity: 0, scaleY: 0 }}
+              initial={{ opacity: 0}}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 1 }}
               key="teschstack"
               className=" bg-white p-2 md:p-4 h-max border-4 border-black border-dashed relative sm:w-max w-full sm:max-w-xs lg:max-w-xl xl:max-w-xs 2xl:max-w-sm"
@@ -73,10 +73,10 @@ export const BreazyTextComponent = () => {
               </p>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, scaleY: 0, originY: 0 }}
-              animate={{ opacity: 1, scaleY: 1 }}
-              exit={{ opacity: 0, scaleY: 0 }}
-              transition={{ duration: 1 }}
+              initial={{ opacity: 0, }}
+              animate={{ opacity: 1}}
+              exit={{ opacity: 0,  }}
+              transition={{ duration: 1, delay:0.2 }}
               key="accomplishments"
               className="sm:place-self-end bg-white p-2 md:p-4 h-max border-4 border-black border-dashed relative sm:w-max w-full sm:max-w-md lg:max-w-lg xl:max-w-xs 2xl:max-w-md"
             >
