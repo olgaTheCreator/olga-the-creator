@@ -35,6 +35,10 @@ module.exports = {
         marquee: "marquee 40s linear infinite",
         marquee2: "marquee2 40s linear infinite",
       },
+      transitionProperty: {
+        all_no_border:
+          "color, background-color, text-decoration-color, fill, stroke, opacity, border-y, border-t, box-shadow, transform, filter, backdrop-filter, padding, height, width, font",
+      },
     },
   },
   plugins: [],

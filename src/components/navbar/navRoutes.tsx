@@ -2,7 +2,7 @@ export const navRoutes = [
   {
     title: "about",
     shortTitle: "a",
-    path: "/about",
+    path: "/",
     activeStyle: " bg-yellow_bright",
     regularStyle: " bg-yellow_light border-l-2",
   },

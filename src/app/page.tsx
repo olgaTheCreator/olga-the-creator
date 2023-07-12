@@ -1,7 +1,22 @@
-export default function Home({ children }: { children: React.ReactNode }) {
+"use client";
+
+import { AboutMeComponent } from "@/components/about/AboutMeComponent";
+import { MySkillsComponent } from "@/components/about/MySkillsComponent";
+import { motion } from "framer-motion";
+
+const AboutMe = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8 lg:p-16 xl:p-24">
-      {children}
-    </main>
+    <motion.div
+      key="about"
+      initial={{ opacity: 0.9 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="w-full bg-yellow_bright font-roboto font-medium h-full border-x-4 border-b-4 border-black flex-col items-center flex pb-6 gap-10"
+    >
+      <AboutMeComponent />
+      <MySkillsComponent />
+    </motion.div>
   );
-}
+};
+
+export default AboutMe;

@@ -14,11 +14,11 @@ export const Navbar = () => {
     <div className="w-full flex font-vibur">
       <div className="md:basis-4/5 lg:basis-3/4 xl:basis-2/3 basis-full grid md:grid-cols-4 grid-cols-6 place-items-end lg:text-5xl relative text-4xl">
         {navRoutes.map((link) => {
-          const isActive = pathname.startsWith(link.path);
+          const isActive = pathname === link.path;
 
           return (
             <Link
-              className={`transition-all duration-200 ${
+              className={`transition-all_no_border duration-200 ${
                 isActive
                   ? activeLink + link.activeStyle
                   : navStyle + link.regularStyle

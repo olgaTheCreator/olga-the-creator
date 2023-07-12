@@ -2,13 +2,6 @@
 const nextConfig = {};
 
 module.exports = {
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/about",
-        permanent: true,
-      },
-    ];
-  },
+  output: "export",
+  images: { unoptimized: true },
 };
