@@ -28,7 +28,7 @@ const Contact = () => {
         transition={{
           duration: 0.5,
         }}
-        className="grid z-10 lg:gap-10 gap-6 grid-cols-5 grid-rows-4 max-w-screen-lg lg:mt-10 mb-6 h-5/6 relative"
+        className="grid  z-10 lg:gap-10 gap-6 grid-cols-5 grid-rows-4 max-w-screen-lg lg:mt-10 mb-6 h-5/6 relative"
       >
         <a
           href="mailto:curylo.olga@gmail.com"
@@ -42,7 +42,7 @@ const Contact = () => {
             transition={{
               duration: 0.4,
             }}
-            className="bg-white md:px-8 px-6 py-2 md:py-4 text-4xl md:text-5xl border-4 border-black relative border-dashed leading-relaxed hover:rounded-full hover:border-8 transition-all duration-100 hover:font-medium "
+            className="bg-white underline  md:px-8 px-6 py-2 md:py-4 text-4xl md:text-5xl border-4 border-black relative border-dashed leading-relaxed hover:rounded-full hover:border-8 transition-all duration-100 hover:font-medium "
           >
             EMAIL
           </motion.button>
@@ -60,7 +60,7 @@ const Contact = () => {
             transition={{
               duration: 0.3,
             }}
-            className="bg-white md:px-8 px-6 py-2 md:py-4 text-4xl md:text-5xl  border-4 border-black border-dashed leading-relaxed hover:rounded-full hover:border-8 transition-all duration-100 hover:font-medium"
+            className="bg-white underline  md:px-8 px-6 py-2 md:py-4 text-4xl md:text-5xl  border-4 border-black border-dashed leading-relaxed hover:rounded-full hover:border-8 transition-all duration-100 hover:font-medium"
           >
             GITHUB
           </motion.button>
@@ -78,7 +78,7 @@ const Contact = () => {
             transition={{
               duration: 0.35,
             }}
-            className="bg-white md:px-8 px-6 py-2 md:py-4 text-4xl md:text-5xl  border-4 border-black border-dashed leading-relaxed hover:rounded-full hover:border-8 transition-all duration-100 hover:font-medium"
+            className="bg-white underline  md:px-8 px-6 py-2 md:py-4 text-4xl md:text-5xl  border-4 border-black border-dashed leading-relaxed hover:rounded-full hover:border-8 transition-all duration-100 hover:font-medium"
           >
             LINKEDIN
           </motion.button>
@@ -97,7 +97,7 @@ const Contact = () => {
             transition={{
               duration: 0.45,
             }}
-            className="bg-white md:px-8 px-6 py-2 md:py-4 text-4xl md:text-5xl  border-4 border-black border-dashed leading-relaxed hover:rounded-full hover:border-8 transition-all duration-100 hover:font-medium"
+            className="bg-white underline  md:px-8 px-6 py-2 md:py-4 text-4xl md:text-5xl  border-4 border-black border-dashed leading-relaxed hover:rounded-full hover:border-8 transition-all duration-100 hover:font-medium"
           >
             CV
           </motion.button>

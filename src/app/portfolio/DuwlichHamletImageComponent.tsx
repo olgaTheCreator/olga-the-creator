@@ -18,14 +18,6 @@ export const DulwichHamletImageComponent = () => {
             src={dulwichhamlet}
             alt="screenshot of Dulwich Hamlet FC fanpage"
           />
-
-          <p className="text-white  underline absolute top-20 lg:top-32  left-2 lg:left-4 text-3xl group-hover:text-4xl w-full transition-all duration-500">
-            {" "}
-            Click to go to <br />
-            Dulwich Hamlet
-            <br />
-            fanpage!
-          </p>
         </Link>
       </div>
       <div className="bg-white  max-w-sm lg:max-w-xl w-full flex mx-auto sm:mx-0 mt-6 p-4 h-max text-2xl border-4 group border-black border-dashed relative group hover:bg-black hover:border-white transition-all duration-300">
@@ -40,6 +32,13 @@ export const DulwichHamletImageComponent = () => {
             src={dulwichhamlet2}
             alt="screenshot of Dulwich Hamlet FC fanpage"
           />
+          <p className="text-white backdrop-blur-md  underline absolute top-8 lg:top-24 left-12  lg:left-[45%] text-3xl group-hover:text-4xl transition-all duration-500">
+            {" "}
+            Click to go to <br />
+            Dulwich Hamlet
+            <br />
+            fanpage!
+          </p>
         </Link>
       </div>
     </div>

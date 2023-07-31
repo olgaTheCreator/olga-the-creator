@@ -62,7 +62,7 @@ export const AboutMeComponent = () => {
         className="bg-white lg:hover:scale-125 transition-all duration-500 lg:hover:border-blue_bright lg:w-sm max-w-sm p-2 2xl:p-4 -ml-3 lg:ml-0 lg:col-start-1 xl:col-span-3 lg:col-span-4 xl:mx-6 lg:row-start-2 lg:row-span-2 xl:row-span-3 xl:mt-20 text-2xl border-8 border-black border-double leading-relaxed "
       >
         <Link href="https://certificates.cs50.io/2d31df6e-250e-4be8-979d-6d9c7ad6059d.pdf?size=letter">
-          <p className="font-bold">Harvard CS50 Certificate:</p>
+          <p className="font-bold underline">Harvard CS50 Certificate:</p>
           <Image
             className="mt-4"
             src="/images/CS50xOlgaCurylo.png"
@@ -141,7 +141,7 @@ export const AboutMeComponent = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="bg-white group lg:hover:border-dashed lg:hover:rounded-xl lg:hover:shadow-lg lg:hover:shadow-[#c4e2fd] md:w-48 lg:w-56 lg:hover:border-blue_bright relative lg:mt-4 lg:mx-4 2xl:ml-2 2xl:mr-0 2xl:p-6 p-2 lg:p-4 text-2xl max-w-md lg:w-md border-4 border-black border-dashed lg:border-dotted leading-relaxed"
+            className="bg-white group underline lg:hover:border-dashed lg:hover:rounded-xl lg:hover:shadow-lg lg:hover:shadow-[#c4e2fd] md:w-48 lg:w-56 lg:hover:border-blue_bright relative lg:mt-4 lg:mx-4 2xl:ml-2 2xl:mr-0 2xl:p-6 p-2 lg:p-4 text-2xl max-w-md lg:w-md border-4 border-black border-dashed lg:border-dotted leading-relaxed"
           >
             I want to learn about{" "}
             <span className="lg:group-hover:font-bold ">scalability</span>.
