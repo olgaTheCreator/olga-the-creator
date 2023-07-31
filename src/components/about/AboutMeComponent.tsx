@@ -59,9 +59,18 @@ export const AboutMeComponent = () => {
         initial={{ x: "-500%" }}
         animate={{ x: "0%" }}
         transition={{ duration: 0.4 }}
-        className="bg-white lg:w-sm p-4 2xl:p-8 max-w-sm -ml-3 lg:ml-0 lg:col-start-1 xl:col-span-3 lg:col-span-4 xl:mx-6 lg:row-start-2 lg:row-span-2 xl:row-span-3 xl:mt-20 text-2xl border-8 border-black border-double leading-relaxed"
+        className="bg-white lg:hover:scale-125 transition-all duration-500 lg:hover:border-blue_bright lg:w-sm max-w-sm p-2 2xl:p-4 -ml-3 lg:ml-0 lg:col-start-1 xl:col-span-3 lg:col-span-4 xl:mx-6 lg:row-start-2 lg:row-span-2 xl:row-span-3 xl:mt-20 text-2xl border-8 border-black border-double leading-relaxed "
       >
-        <p>Harvard Cs50 Certificate:</p>
+        <Link href="https://certificates.cs50.io/2d31df6e-250e-4be8-979d-6d9c7ad6059d.pdf?size=letter">
+          <p className="font-bold">Harvard CS50 Certificate:</p>
+          <Image
+            className="mt-4"
+            src="/images/CS50xOlgaCurylo.png"
+            alt="image of CS50 certificate"
+            height={500}
+            width={400}
+          />
+        </Link>
       </motion.div>
       <motion.div
         initial={{ x: "500%" }}
