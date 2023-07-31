@@ -4,6 +4,8 @@ import { WatchTogetherImageComponent } from "./WatchTogetherImageComponent";
 import { BreazyImageComponent } from "./BreazyImageComponent";
 import { BreazyTextComponent } from "./BreazyTextComponent";
 import { motion } from "framer-motion";
+import { DulwichHamletTextComponent } from "./DulwichHamletTextComponent";
+import { DulwichHamletImageComponent } from "./DuwlichHamletImageComponent";
 
 const Portfolio = () => {
   return (
@@ -22,6 +24,10 @@ const Portfolio = () => {
         <div className="flex flex-col sm:flex-row justify-start gap-6 md:gap-10 pt-10">
           <BreazyImageComponent />
           <BreazyTextComponent />
+        </div>
+        <div className="flex flex-col sm:flex-row justify-start gap-6 md:gap-10 transition-all duration-300 pt-10">
+          <DulwichHamletTextComponent />
+          <DulwichHamletImageComponent />
         </div>
       </div>
     </motion.div>
